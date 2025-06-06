@@ -1,7 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useLocation } from "react-router-dom";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-import hero from "../assets/hero.webp";
+import maggie from "../assets/Maggie.png";
 import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
 
 // Lazy-loaded components
@@ -58,7 +58,7 @@ const HomePage = () => {
           <FadeInWhenVisible>
             <div className="flex justify-center md:justify-end">
               <div className="w-60 h-60 rounded-full overflow-hidden shadow-lg border-4 border-[#F25D9C]">
-                <img src={hero} alt="Margaret Egbe" className="w-full h-full object-cover" />
+                <img src={maggie} alt="Margaret Egbe" className="w-full h-full object-center" />
               </div>
             </div>
           </FadeInWhenVisible>
