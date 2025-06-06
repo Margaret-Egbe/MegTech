@@ -21,8 +21,8 @@ const Portfolio = () => {
             {/* Image Container */}
             <div className="flex-[2]">
               {/* Desktop Mockup */}
-            <FadeInWhenVisible direction="zoom" delay={0.4}>
-              <div className="w-full h-full">
+            <FadeInWhenVisible direction="zoom" delay={0.2}>
+              <div className="w-full h-full transition-transform duration-500 hover:scale-105">
                 <img
                   src={nexa_mac}
                   alt="Desktop View"
@@ -31,7 +31,7 @@ const Portfolio = () => {
               </div>
 
               {/* Mobile Mockup - Positioned absolutely */}
-              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-37 md:bottom-0 left-0">
+              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-37 md:bottom-0 left-0 transition-transform duration-500 hover:scale-105">
                 <img
                   src={nexa_iphone}
                   alt="Mobile View"
@@ -43,7 +43,7 @@ const Portfolio = () => {
 
             {/* Text Content */}
             <div className="flex-1 text-center md:text-left mt-8 md:mt-0">
-            <FadeInWhenVisible direction="right">  
+            <FadeInWhenVisible direction="right" delay={0.4}>  
               <h3 className="text-xl text-[#261C82] font-semibold mb-2">
                 Nexa – AI-Powered Educational Platform
               </h3>
@@ -89,9 +89,9 @@ const Portfolio = () => {
           <div className=" w-full h-full flex flex-col md:flex-row justify-between items-center gap-4 relative my-4">
             {/* Image Container */}
             <div className="flex-[2]">
-            <FadeInWhenVisible direction="zoom" delay={0.4}>
+            <FadeInWhenVisible direction="left" delay={0.2}>
               {/* Desktop Mockup */}
-              <div className="w-full h-full">
+              <div className="w-full h-full transition-transform duration-500 hover:scale-105">
                 <img
                   src={orderbite_mac}
                   alt="Desktop View"
@@ -100,7 +100,7 @@ const Portfolio = () => {
               </div>
 
               {/* Mobile Mockup - Positioned absolutely */}
-              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-42 md:bottom-0 left-0">
+              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-42 md:bottom-0 left-0 transition-transform duration-500 hover:scale-105">
                 <img
                   src={orderbite_iphone}
                   alt="Mobile View"
@@ -112,7 +112,7 @@ const Portfolio = () => {
 
             {/* Text Content */}
             <div className="flex-1 text-center md:text-left mt-8 md:mt-0">
-              <FadeInWhenVisible direction="left">
+              <FadeInWhenVisible direction="left" delay={0.4}>
               <h3 className="text-xl text-[#261C82] font-semibold mb-2">
                 OrderBite – Online Food Ordering Platform
               </h3>
@@ -157,9 +157,9 @@ const Portfolio = () => {
           <div className=" w-full h-full flex flex-col md:flex-row justify-between items-center gap-4 relative my-4">
             {/* Image Container */}
             <div className="flex-[2]">
-              <FadeInWhenVisible direction="zoom" delay={0.4}>
+              <FadeInWhenVisible direction="zoom" delay={0.2}>
               {/* Desktop Mockup */}
-              <div className="w-full h-full">
+              <div className="w-full h-full  object-cover transition-transform duration-500 hover:scale-105 ">
                 <img
                   src={mflix_mac}
                   alt="Desktop View"
@@ -168,7 +168,7 @@ const Portfolio = () => {
               </div>
 
               {/* Mobile Mockup - Positioned absolutely */}
-              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-37 md:bottom-0 left-0">
+              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-37 md:bottom-0 left-0 object-cover transition-transform duration-500 hover:scale-105 ">
                 <img
                   src={mflix_iphone}
                   alt="Mobile View"
@@ -180,7 +180,7 @@ const Portfolio = () => {
 
             {/* Text Content */}
             <div className="flex-1 text-center md:text-left mt-8 md:mt-0">
-              <FadeInWhenVisible direction="right">
+              <FadeInWhenVisible direction="right" delay={0.4}>
               <h3 className="text-xl text-[#261C82] font-semibold mb-2">
                 MFlix – Movie Discovery Platform
               </h3>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import MainNav from "./MainNav";
 import MobileNav from "./MobileNav";
@@ -11,7 +10,7 @@ const Header = () => {
         {/* MOBILE VIEW: logo + contact + hamburger */}
         <div className="flex items-center justify-between w-full md:hidden">
           {/* Logo */}
-          <Link to="/#">
+          <a href="/#">
             <div className="flex items-center gap-2">
               <span className="p-[2px] bg-gradient-to-l from-purple-500 to-indigo-500 rounded-full">
                 <img
@@ -22,7 +21,7 @@ const Header = () => {
               </span>
               <span className="text-sm text-[#3F3ABD] font-bold">MegTech</span>
             </div>
-          </Link>
+          </a>
 
           <div className="flex items-center space-x-3">
             {/* Contact Button */}
