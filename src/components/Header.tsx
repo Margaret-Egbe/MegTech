@@ -10,7 +10,7 @@ const Header = () => {
         {/* MOBILE VIEW: logo + contact + hamburger */}
         <div className="flex items-center justify-between w-full md:hidden">
           {/* Logo */}
-          <a href="/#">
+          <a href="/#" className="focus:outline-none focus:ring-0">
             <div className="flex items-center gap-2">
               <span className="p-[2px] bg-gradient-to-l from-purple-500 to-indigo-500 rounded-full">
                 <img
