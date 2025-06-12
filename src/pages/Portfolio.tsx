@@ -59,15 +59,13 @@ const Portfolio = () => {
                 <div className="flex gap-4 text-start text-xs font-medium">
                   <ul>
                     <li>Firebase Auth</li>
-                    <li>Geminine AI</li>
+                    <li>Gemini AI</li>
                     <li>Reat.js</li>
-                    <li>TypeScript</li>
                   </ul>
                   <ul>
+                    <li>TypeScript</li>
                     <li>Tailwind CSS,</li>
-                    <li>Node.js,</li>
-                    <li>Express.js</li>
-                    <li>Vite</li>
+                     <li>Vite</li>
                   </ul>
                 </div>
 
