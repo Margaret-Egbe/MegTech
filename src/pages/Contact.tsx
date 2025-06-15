@@ -5,9 +5,23 @@ import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);  // new state for error
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const formData = new FormData(form.current!);
+    const name = formData.get("user_name")?.toString().trim();
+    const email = formData.get("user_email")?.toString().trim();
+    const message = formData.get("user_message")?.toString().trim();
+
+    // validation
+    if (!name || !email || !message) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    setError(null); // clear any previous error
 
     emailjs
       .sendForm(
@@ -28,6 +42,7 @@ const Contact = () => {
         (error) => {
           console.error(error.text);
           setSent(false);
+          setError("Failed to send message. Please try again.");
         }
       );
   };
@@ -101,6 +116,9 @@ const Contact = () => {
                 <p className="text-green-600 mt-3">
                   Message sent successfully ✅
                 </p>
+              )}
+              {error && (
+                <p className="text-red-600 mt-3">{error}</p>
               )}
             </div>
           </form>
