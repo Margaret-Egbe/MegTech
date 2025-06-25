@@ -31,7 +31,7 @@ const Portfolio = () => {
               </div>
 
               {/* Mobile Mockup - Positioned absolutely */}
-              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-52 md:bottom-0 left-0 transition-transform duration-500 hover:scale-105">
+              <div className="w-[20%] md:w-[15%] h-[100%] absolute bottom-46 md:bottom-0 left-0 transition-transform duration-500 hover:scale-105">
                 <img
                   src={zaya_iphone}
                   alt="Mobile View"
