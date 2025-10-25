@@ -1,7 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useLocation } from "react-router-dom";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-import maggie from "../assets/Maggie.png";
+import maggie from "../assets/Maggie.jpg";
 import { FadeInWhenVisible } from "@/components/animations/FadeInWhenVisible";
 
 // Lazy-loaded components
@@ -26,7 +26,7 @@ const HomePage = () => {
     <>
       {/* About Section */}
       <section id="about" className="bg-white py-16 px-5 md:px-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Text Content */}
           <FadeInWhenVisible direction="zoom" delay={0.4}>
             <div>
@@ -58,7 +58,7 @@ const HomePage = () => {
           <FadeInWhenVisible>
             <div className="flex justify-center md:justify-end">
               <div className="w-60 h-60 rounded-full overflow-hidden shadow-lg border-4 border-[#F25D9C]">
-                <img src={maggie} alt="Margaret Egbe" className="w-full h-full object-center" />
+                <img src={maggie} alt="Margaret Egbe" className="w-full" />
               </div>
             </div>
           </FadeInWhenVisible>
